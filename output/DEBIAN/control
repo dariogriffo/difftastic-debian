@@ -1,0 +1,13 @@
+Source: difftastic
+Section: text
+Priority: optional
+Maintainer: Dario Griffo <dariogriffo@gmail.com>
+Homepage: https://difftastic.wilfred.me.uk/
+Package: difftastic
+Version: difftastic_VERSION-BUILD_VERSION~DIST
+Architecture: SUPPORTED_ARCHITECTURES
+Installed-Size: INSTALLED_SIZE
+Depends: PACKAGE_DEPENDS
+Description: structural diff tool that understands syntax
+ Difftastic compares files based on their syntax rather than line by line,
+ so reformatting is not reported as a change. Provides the difft command.

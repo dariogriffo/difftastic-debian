@@ -1,0 +1,13 @@
+# .deb Packages
+*.deb
+
+# Source packages and downloaded upstream artifacts
+*.dsc
+*.orig.tar.gz
+*.debian.tar.xz
+*.tar.gz
+difft-*/
+difftastic-[0-9]*/
+
+.idea/*
+.DS_Store

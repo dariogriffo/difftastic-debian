@@ -1,0 +1,24 @@
+Source: difftastic
+Section: text
+Priority: optional
+Maintainer: Dario Griffo <dariogriffo@gmail.com>
+Build-Depends: debhelper-compat (= 13), wget, ca-certificates
+Standards-Version: 4.6.2
+Homepage: https://difftastic.wilfred.me.uk/
+Rules-Requires-Root: no
+
+Package: difftastic
+Architecture: amd64 arm64
+Depends: ${misc:Depends}, shared-mime-info${dist:Depends}
+Description: structural diff tool that understands syntax
+ Difftastic is a structural diff tool that compares files based on their
+ syntax rather than line by line. It parses the files with tree-sitter,
+ builds a syntax tree for each side and reports exactly which pieces of
+ syntax changed, so reformatting or re-indentation is not reported as a
+ change.
+ .
+ Over 30 languages are supported; files with an unrecognised extension fall
+ back to a line-oriented diff with word highlighting. Difftastic can be used
+ standalone or as an external diff command for git, mercurial, jj and fossil.
+ .
+ The command provided by this package is difft.
